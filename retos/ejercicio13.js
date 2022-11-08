@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 /**
 Crea una aplicación llamada CalculadoraInversa, nos pedirá 2 operandos (int) y
 un signo aritmético (String), según este último se realizará la operación
