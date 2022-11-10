@@ -6,27 +6,17 @@ número, y de este, generé su tabla de multiplicar del 0 al 10.
 
 // definiciones
 var numero
-var mensaje = ''
 
 // leer datos
-
 do {
     numero = prompt('Entre número: ')
     numero = Number(numero)
 
-    esUnNumero = !isNaN(numero)
+    if (!numero)
+        console.log('Error, debe entrar un número')
 
-    // if (!esUnNumero) {
-    //     mensaje = 'Error, debe entrar un número'
-    // } else {
-    //     mensaje = ''
-    // }
 
-    mensaje = (!esUnNumero) ? 'Error, debe entrar un número' : ''
-
-    console.log(mensaje)
-
-} while (!esUnNumero);
+} while (!numero);
 
 
 console.log(numero)
